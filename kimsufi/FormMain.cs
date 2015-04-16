@@ -108,7 +108,8 @@ namespace kimsufi
             SetStatus("Request failed!");
           }
 
-          Thread.Sleep(5000 + rnd.Next(-500, 500));
+          // 500 per 3600 seconds (every 7.2 seconds), or you'll get banned :)
+          Thread.Sleep(7200 + rnd.Next(1000));
         }
       }));
       m_pThread.Start();
