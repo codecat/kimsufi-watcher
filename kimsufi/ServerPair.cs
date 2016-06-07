@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,48 +19,46 @@ namespace kimsufi
     public ServerPair(string strReference)
     {
       switch (strReference) {
-        case "150sk10":
+        case "160sk1":
           m_strName = "KS-1";
           m_check = Program.MainForm.checkWantKS1;
           m_label = Program.MainForm.labelKS1;
           break;
 
-        case "150sk20":
-          m_strName = "KS-2";
-          m_check = Program.MainForm.checkWantKS2;
-          m_label = Program.MainForm.labelKS2;
+        case "160sk2":
+          m_strName = "KS-2A";
+          m_check = Program.MainForm.checkWantKS2A;
+          m_label = Program.MainForm.labelKS2A;
           break;
 
-        case "150sk22":
-          m_strName = "KS-2 SSD";
-          m_check = Program.MainForm.checkWantKS2SSD;
-          m_label = Program.MainForm.labelKS2SSD;
+        case "161sk2":
+          m_strName = "KS-2E";
+          m_check = Program.MainForm.checkWantKS2E;
+          m_label = Program.MainForm.labelKS2E;
           break;
 
-        case "150sk30":
-          m_strName = "KS-3";
-          m_check = Program.MainForm.checkWantKS3;
-          m_label = Program.MainForm.labelKS3;
+        case "160sk3":
+          m_strName = "KS-3A";
+          m_check = Program.MainForm.checkWantKS3A;
+          m_label = Program.MainForm.labelKS3A;
           break;
 
-        case "150sk40":
-        case "150sk41": // are these essentially all the same?
-        case "150sk42":
-          m_strName = "KS-4";
-          m_check = Program.MainForm.checkWantKS4;
-          m_label = Program.MainForm.labelKS4;
+        case "160sk31":
+          m_strName = "KS-3B";
+          m_check = Program.MainForm.checkWantKS3B;
+          m_label = Program.MainForm.labelKS3B;
           break;
 
-        case "150sk50":
+        case "160sk4":
+          m_strName = "KS-4A";
+          m_check = Program.MainForm.checkWantKS4A;
+          m_label = Program.MainForm.labelKS4A;
+          break;
+
+        case "160sk5":
           m_strName = "KS-5";
           m_check = Program.MainForm.checkWantKS5;
           m_label = Program.MainForm.labelKS5;
-          break;
-
-        case "150sk60":
-          m_strName = "KS-6";
-          m_check = Program.MainForm.checkWantKS6;
-          m_label = Program.MainForm.labelKS6;
           break;
       }
 
