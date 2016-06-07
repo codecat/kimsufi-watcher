@@ -57,8 +57,8 @@ namespace kimsufi
 
         case "160sk5":
           m_strName = "KS-5";
-          m_check = Program.MainForm.checkWantKS4A;
-          m_label = Program.MainForm.labelKS4A;
+          m_check = Program.MainForm.checkWantKS5;
+          m_label = Program.MainForm.labelKS5;
           break;
       }
 
