@@ -11,22 +11,6 @@ using System.Threading;
 using Nimble.JSON;
 using System.Diagnostics;
 
-/* {
- *   answer: {
- *     availability: [
- *       {
- *         reference: "150sk20", (sk22 is KS-2 SSD)
- *         metaZones: [
- *           {
- *             zone: "fr",
- *             availability: "unknown" (or "unavailable", "1H-high", "1H-low", or anything else = available)
- *           }
- *         ]
- *       }
- *     ]
- *   }
- * }
- */
 
 namespace kimsufi
 {
@@ -119,12 +103,12 @@ namespace kimsufi
     {
       this.BackColor = Color.Black;
       Flash(labelKS1, checkWantKS1);
-      Flash(labelKS2, checkWantKS2);
-      Flash(labelKS2SSD, checkWantKS2SSD);
-      Flash(labelKS3, checkWantKS3);
-      Flash(labelKS4, checkWantKS4);
+      Flash(labelKS2A, checkWantKS2A);
+      Flash(labelKS2E, checkWantKS2E);
+      Flash(labelKS3A, checkWantKS3A);
+      Flash(labelKS3B, checkWantKS3B);
+      Flash(labelKS4A, checkWantKS4A);
       Flash(labelKS5, checkWantKS5);
-      Flash(labelKS6, checkWantKS6);
     }
 
     void Flash(Label label, CheckBox check)
@@ -158,15 +142,15 @@ namespace kimsufi
 
     void OpenWebsite()
     {
-      Process.Start("http://www.kimsufi.com/nl/");
+      Process.Start("https://www.kimsufi.com/de/servers.xml");
     }
 
-    private void labelKS6_Click(object sender, EventArgs e) { OpenWebsite(); }
     private void labelKS5_Click(object sender, EventArgs e) { OpenWebsite(); }
-    private void labelKS4_Click(object sender, EventArgs e) { OpenWebsite(); }
-    private void labelKS3_Click(object sender, EventArgs e) { OpenWebsite(); }
-    private void labelKS2SSD_Click(object sender, EventArgs e) { OpenWebsite(); }
-    private void labelKS2_Click(object sender, EventArgs e) { OpenWebsite(); }
+    private void labelKS4A_Click(object sender, EventArgs e) { OpenWebsite(); }
+    private void labelKS3B_Click(object sender, EventArgs e) { OpenWebsite(); }
+    private void labelKS3A_Click(object sender, EventArgs e) { OpenWebsite(); }
+    private void labelKS2E_Click(object sender, EventArgs e) { OpenWebsite(); }
+    private void labelKS2A_Click(object sender, EventArgs e) { OpenWebsite(); }
     private void labelKS1_Click(object sender, EventArgs e) { OpenWebsite(); }
   }
 }
